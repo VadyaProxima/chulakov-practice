@@ -1,19 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	line-height: 1.5;
+	font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgba(31, 34, 41, 1);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: rgba(31, 34, 41, 1);
+	font-size: 16px;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-body{
- padding: 0;
- margin: 0;
- }
+body {
+	padding: 0;
+	margin: 0;
+}
 
+.wrapper {
+	max-width: 1116px;
+	margin: auto;
+	margin-top: 56px;
+}
+.first-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+p {
+	font-family: var(--font-tele2);
+	color: var(--white-color);
+	font-weight: var(--p-font-weight);
+	font-size: var(--p-font-size);
+}
+.title {
+	font-size: clamp(2.25rem, 1.523rem + 3.64vw, 4.25rem);
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+
+	font-family: 'Gwendolyn', cursive;
+	font-weight: 700;
+	font-style: normal;
+
+	line-height: 68px;
+
+	margin: 48px 0px 24px 0px;
+}
+.title_highlight {
+	color: var(--blue-color);
+	display: block;
+}
+.large_button {
+	background-color: var(--white-color);
+	padding: 19px 44px;
+	border-radius: 13123px;
+	margin-top: 56px;
+	border: none;
+	cursor: pointer;
+}
+.large_button_text {
+	font-size: 16px;
+	color: rgba(31, 34, 41, 1);
+	font-family: var(--font-tele2);
+	font-weight: 600;
+}
+
+.section_2 {
+	margin: 148px 0px 0px 0px;
+}
+.sub_title {
+	font-family: var(--font2-tele2);
+	font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+	line-height: 52px;
+	margin-left: 2px;
+}
+.sup_text {
+	font-family: var(--font-tele2);
+	font-size: var(--p-font-size);
+}
+.tele2_content {
+	display: flex;
+
+	list-style-type: none;
+	padding: 0;
+	margin-top: 56px;
+}
+.tele2_content_group {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	margin-right: 56px;
+}
+
+.tele2_content_icon {
+	margin-right: 16px;
+}
+.tele2_content_text {
+	font-family: var(--font-tele2);
+	font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+}
+.section_3 {
+	margin-top: 148px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.coolinput {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: static;
+}
+
+.coolinput label.text {
+	font-size: 0.75rem;
+	color: rgba(143, 147, 153, 1);
+	font-family: var(--font-tele2);
+	position: relative;
+	top: 0.5rem;
+	margin: 0;
+	padding: 0;
+	background: #e8e8e800;
+	width: fit-content;
+}
+
+.coolinput input[type='text'].input {
+	padding: 10px 0px 5px 0px;
+	font-size: 16px;
+	border: none;
+	border-bottom: 2px rgba(143, 147, 153, 1) solid;
+	border-radius: 0px;
+	background: #e8e8e800;
+	margin-bottom: 24px;
+}
+
+.coolinput input[type='text'].input:focus {
+	outline: none;
+}
+.checkbox-container {
+	display: flex;
+	align-items: flex-start;
+}
+
+.button {
+	background-color: var(--white-color);
+	padding: 11px 40px 15px 40px;
+	border-radius: 13123px;
+	margin-top: 32px;
+	margin-bottom: 48px;
+	border: none;
+	cursor: pointer;
+}
+.button_text {
+	font-size: 16px;
+	color: rgba(31, 34, 41, 1);
+	font-family: var(--font-tele2);
+	font-weight: 600;
+}
+
+.text::before {
+	content: attr(data-text);
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.success::before {
+	content: 'Промокод выслан на ваш номер';
+	color: green;
+}
+
+.error::before {
+	content: 'Ошибка ввода номера телефона';
+	color: red;
+}
+
+.checkbox {
+	background-color: rgba(157, 35, 35, 0);
+	width: 30px;
+	height: 30px;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 100%;
+}
+
+.square-checkbox {
+	display: none; /* Скрыть стандартные чекбоксы */
+}
+
+.checkbox-container {
+	position: relative;
+	padding-left: 40px; /* Отступ для размещения кастомного чекбокса */
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.custom-checkbox {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	border: 2px solid rgb(255, 255, 255);
+	background-color: transparent;
+}
+
+.square-checkbox:checked + .custom-checkbox {
+	background-color: transparent;
+}
+
+.square-checkbox:checked + .custom-checkbox::after {
+	content: '';
+	position: absolute;
+	left: 7px;
+	top: 1px;
+	width: 7px;
+	height: 14px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+.checkbox_text {
+	display: inline-block;
+	vertical-align: middle;
+
+	margin: 0;
+}
+.checked_text {
+	margin: 0;
+	margin-left: 12px;
+}
+
+.checked_container {
+	padding: 12px 0px 12px 12px;
+	width: 100%;
+	display: flex;
+	background-color: rgba(38, 43, 54, 1);
+	border-radius: 8px;
+	align-items: center;
+}
+.steps li {
+	list-style-type: none;
+	margin-bottom: 32px;
+}
+.steps li:last-child {
+	margin-bottom: 0;
+}
+.step {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.step_text {
+	font-family: var(--font-tele2);
+	color: var(--white-color);
+	font-weight: var(--p-font-weight);
+	font-size: var(--p-font-size);
+	margin-left: 24px;
+}
+a {
+	color: var(--white-color);
+}
+.section_4 {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 148px;
+}
+
+.img2 {
+	width: clamp(14.377rem, 12.074rem + 11.52vw, 22.438rem);
+}
+.img1 {
+	width: clamp(19.75rem, 14.964rem + 23.93vw, 36.5rem);
+}

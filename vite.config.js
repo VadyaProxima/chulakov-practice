@@ -27,5 +27,6 @@ export default {
   ],
   build: {
     target: targets,
+    cssMinify: 'lightningcss'
   },
 };

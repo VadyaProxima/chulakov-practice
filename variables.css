@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #3498db;
+    --blue-color: rgba(72, 204, 253, 1);
+    --white-color: rgb(255, 255, 255, 1);
+    --font-tele2:"Tele2 TextSans Web SHORT Regular";
+    --p-font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+    --p-font-weight: 400;
+    --grey-color: rgba(31, 34, 41, 1);
+    --font2-tele2:"Tele2 Display Serif";
+
+
+
+    /* --typography-secondary: {
+        font-family: "Tele2 TextSans Web SHORT Regular";
+        color: rgb(255, 255, 255, 1);
+        font-weight: 400;
+        font-size: 20px;
+    }; */
+  }
+  

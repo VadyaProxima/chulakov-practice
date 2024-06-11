@@ -1,0 +1,43 @@
+@import './variables.css';
+
+p{
+	margin: 0;
+}
+.wrapper {
+	max-width: 1116px;
+	margin: auto;
+}
+.section_12{
+	margin-top: 148px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid;
+}
+.sup_text{
+	display: flex;
+	align-items: center;
+}
+.img32{
+	margin-left: 12px;
+}
+
+.section_22{
+	display: flex;
+	justify-content: space-between;
+	padding: 43px 0px 47px 0px;
+}
+.small_text{
+	text-wrap: nowrap;
+	font-family: var(--font2-tele2);
+	font-size: 13px;
+	color: rgba(255, 255, 255, 1);
+	opacity: 50%;
+	padding: 4px 24px 0px 24px;
+}
+.ya_ustal_vidumivat_classi{
+display: flex;
+align-items: center;
+}
+.img_chulakov{
+	width: 140px;
+}

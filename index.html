@@ -1,13 +1,118 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    {{> header}}
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="/assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tele2</title>
+</head>
+
+<body>
+  {{> header}}
+  <script type="module" src="/main.js"></script>
+
+  <main class="wrapper">
+    <section class="first-section">
+      <article class="article-content">
+        <p>Акция продлится с 1 по 20 сентября</p>
+        <h1 class="title">это ваша
+          <span class="title_highlight">выгода!</span>
+        </h1>
+        <p>Тариф «Мой онлайн+» и 1 ТБ трафика <br>в подарок для новых абонентов</p>
+        <button class="large_button"><span class="large_button_text">Принять участие</span></button>
+      </article>
+      <img class="img1" src="/assets/Boss1 2.svg" alt="Boss1">
+    </section>
+
+    <section class="section_2">
+      <h2 class="sub_title">Один терабайт — много любимых развлечений</h2>
+      <p class="sup_text">Подарок получают только новые абоненты при подключении услуг Tele2 <br>
+        с тарифом «Мой онлайн+». Трафик расходуется в течение года. </p>
+      <ul class="tele2_content">
+        <li class="poon">
+          <figure class='tele2_content_group'>
+            <img class="tele2_content_icon" src='/assets/youtub.svg' alt='geo' />
+            <figcaption class="tele2_content_text">Около 500 часов видео</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class='tele2_content_group'>
+            <img class="tele2_content_icon" src='/assets/headphones.svg' alt='geo' />
+            <figcaption class="tele2_content_text">Примерно 200 000 песен</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class='tele2_content_group'>
+            <img class="tele2_content_icon" src='/assets/photo.svg' alt='geo' />
+            <figcaption class="tele2_content_text">Порядка 300 000 фото</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section_3">
+      <article>
+        <h2 class="sub_title">Несколько шагов <span class="title_highlight">и 1 ТБ — ваш</span></h2>
+        <label class="coolinput">
+          <label for="input" class="text">Номер телефона</label>
+          <input type="text" placeholder="" name="input" class="input">
+        </label>
+
+        <label class="checkbox-container">
+          <input type="checkbox" id="squareCheckbox" class="square-checkbox">
+          <span class="custom-checkbox square"></span>
+          <p class="checkbox_text">Даю согласие на обработку персональных <br> данных. <a href="">Условия
+              соглашения.</a></p>
+        </label>
+        <button class="button"><span class="button_text">Выслать промокод</span></button>
+
+        <label class="checked_container">
+          <img src="/assets/checked.svg" alt="">
+
+          <p class="checked_text">Промокод выслан на ваш номер</p>
+        </label>
+
+      </article>
+
+      <ul class="steps">
+        <li>
+          <figure class="step">
+            <img src="/assets/1.svg" alt="">
+            <figcaption class="step_text">Ведите свой номер телефона, затем дождитесь <br> смс с промокодом для
+              получения Тб</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="step">
+            <img src="/assets/2.svg" alt="">
+            <figcaption class="step_text">Перейдите на <a href="">сайт Tele2</a> и активируйте промокод при <br>
+              подключении на тариф «Мой Онлайн+»
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="step">
+            <img src="/assets/3.svg" alt="">
+            <figcaption class="step_text">Используйте свой подарочный ТБ от Tele2 <br>в течение всего года</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section class='section_4'>
+      <article>
+        <h2 class="sub_title">Заходите на сайт Tele2</h2>
+        <p class="sup_text">Перейдите в магазин, оформите тариф «Мой онлайн+» <br>
+          и на страничке активации введите ваш промокод. Готово!</p>
+        <button class="button"><span class="button_text">Оформить тариф</span></button>
+      </article>
+      <img class="img" src="/assets/phone.svg" alt="">
+
+    </section>
+  </main>
+  {{> footer}}
+</body>
+
 </html>
