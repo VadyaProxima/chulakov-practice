@@ -3,39 +3,61 @@
 <header>
 	<nav class='header'>
 		<ul class='header__list'>
-			<li><img class="header__logo" src='/assets/Logo.svg' alt='Logo' /></li>
+			<li><img class='header__logo' src='/assets/Logo.svg' alt='Logo' /></li>
 			<li>
 				<figure class='header__geo'>
-					<img src="/assets/Location.svg" alt="">
-						<figcaption id='city-name' class='header__city'>Пятигорск</figcaption>
+					<img src='/assets/Location.svg' alt='' />
+					<figcaption id='city-name' class='header__city'>Пятигорск</figcaption>
 				</figure>
 
-				<template  id='confirm-template'>
-					<dialog class="dialog__1" id='confirm-dialog'>
+				<template class='dialog__1' id='confirm-template'>
+					<dialog class='dialog__1' id='confirm-dialog'>
 						<div class='modal__content'>
-							<h3 id='confirm-title' class="confirm__title">Ваш город Пятигорск?</h3>
-							<button class="confirm__btn" id='confirm-yes'>Да, верно</button>
-							<button class="confirm__btn" id='confirm-change'>Изменить регион</button>
+							<h3 id='confirm-title' class='confirm__title'>Ваш город Пятигорск?</h3>
+
+							<div class="dialog__btns">
+								<button class='confirm__btn' id='confirm-yes'>Да, верно</button>
+								<button class='confirm__btn' id='confirm-change'>Изменить регион</button>
+							</div>
+
 						</div>
 					</dialog>
 				</template>
 
 				<template id='city-template'>
-					<dialog class="dialog__2" id='city-dialog'>
+					<dialog class='dialog__2' id='city-dialog'>
 						<div class='modal__content__2'>
-							<h3 class="title__city">Выберите город</h3>
+							<h3 class='title__city'>Выберите город</h3>
 							<ul class='city__list'>
-								<button class="city__btn" data-city='Воронеж'>Воронеж</button>
-								<button class="city__btn" data-city='Москва'>Москва</button>
-								<button class="city__btn" data-city='Ростов-на-Дону'>Ростов-на-Дону</button>
-								<button class="city__btn" data-city='Иркутск'>Иркутск</button>
-								<button class="city__btn" data-city='Н. Новгород'>Н. Новгород</button>
-								<button class="city__btn" data-city='Пятигорск'>Пятигорск</button>
-								<button class="city__btn" data-city='Санкт-Петербург'>Санкт-Петербург</button>
-								<button class="city__btn" data-city='Новороссийск'>Новороссийск</button>
-								<button class="city__btn" data-city='Екатеринбург'>Екатеринбург</button>
-								<button class="city__btn" data-city='Челябинск'>Челябинск</button>
-								<button class="city__btn" data-city='Казань'>Казань</button>
+								<button class='city__btn' data-city='Воронеж'>Воронеж</button>
+								<button class='city__btn' data-city='Москва'>Москва</button>
+								<button
+									class='city__btn'
+									data-city='Ростов-на-Дону'
+								>Ростов-на-Дону</button>
+								<button class='city__btn' data-city='Иркутск'>Иркутск</button>
+								<button class='city__btn' data-city='Н. Новгород'>Н. Новгород</button>
+								<button
+									class='city__btn'
+									data-city='Пятигорск'
+								>Пятигорск</button>
+								<button
+									class='city__btn'
+									data-city='Санкт-Петербург'
+								>Санкт-Петербург</button>
+								<button
+									class='city__btn'
+									data-city='Новороссийск'
+								>Новороссийск</button>
+								<button
+									class='city__btn'
+									data-city='Екатеринбург'
+								>Екатеринбург</button>
+								<button
+									class='city__btn'
+									data-city='Челябинск'
+								>Челябинск</button>
+								<button class='city__btn' data-city='Казань'>Казань</button>
 							</ul>
 						</div>
 					</dialog>

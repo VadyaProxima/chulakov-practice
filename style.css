@@ -252,6 +252,7 @@ h2 {
 	margin-bottom: 48px;
 	border: none;
 	cursor: pointer;
+	transition: transform 0.3s;
 }
 .button_text {
 	font-size: 16px;
@@ -259,7 +260,10 @@ h2 {
 	font-family: var(--font-tele2);
 	font-weight: 600;
 }
-
+.button:hover{
+	transform: scale(1.06);
+	
+}
 .steps__groups li {
 	list-style-type: none;
 	margin-bottom: 32px;
