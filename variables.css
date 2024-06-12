@@ -7,7 +7,7 @@
     --p-font-weight: 400;
     --grey-color: rgba(31, 34, 41, 1);
     --font2-tele2:"Tele2 Display Serif";
-
+    --section-margintop: clamp(4.5rem, 3.143rem + 6.79vw, 9.25rem);
 
 
     /* --typography-secondary: {

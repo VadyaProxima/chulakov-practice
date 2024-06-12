@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cityDialog = document.getElementById('city-dialog');
         cityDialog.showModal();
 
-        cityDialog.querySelectorAll('.city-list button').forEach(button => {
+        cityDialog.querySelectorAll('.city__list button').forEach(button => {
             button.addEventListener('click', function() {
                 const selectedCity = button.getAttribute('data-city');
                 localStorage.setItem('selectedCity', selectedCity);

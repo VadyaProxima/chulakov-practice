@@ -1,43 +1,70 @@
 @import './variables.css';
 
-p{
+p {
 	margin: 0;
 }
-.wrapper {
+.wrapper__footer {
 	max-width: 1116px;
 	margin: auto;
 }
-.section_12{
+.upfooter {
 	margin-top: 148px;
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid;
 }
-.sup_text{
+.social__icon {
+	width: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+}
+.upfooter__suptext {
 	display: flex;
 	align-items: center;
+	margin-bottom: 8px;
 }
-.img32{
+.sup__age {
 	margin-left: 12px;
 }
-
-.section_22{
+.suptext__cond {
+	font-size: 13px;
+}
+.downfooter {
 	display: flex;
 	justify-content: space-between;
 	padding: 43px 0px 47px 0px;
 }
-.small_text{
+.small_text, .small__text2 {
 	text-wrap: nowrap;
-	font-family: var(--font2-tele2);
-	font-size: 13px;
+	font-family: var(--font-tele2);
+
 	color: rgba(255, 255, 255, 1);
 	opacity: 50%;
 	padding: 4px 24px 0px 24px;
+	font-size: 16px;
 }
-.ya_ustal_vidumivat_classi{
-display: flex;
-align-items: center;
+.ya_ustal_vidumivat_classi, .ya_ustal_vidumivat_classi--none {
+	display: flex;
+	align-items: center;
 }
-.img_chulakov{
+.img_chulakov {
 	width: 140px;
+}
+
+@media (max-width: 768px) {
+	.ya_ustal_vidumivat_classi--none{
+		display: none;
+	}
+	.logo__chulakov--none{
+		display: none;
+	}
+	.small_text{
+		margin: 0;
+		padding: 0;
+
+	}
+	.ya_ustal_vidumivat_classi{
+		width: 100%;
+		justify-content: space-between;
+		margin-top: 27px;
+		
+	}
 }

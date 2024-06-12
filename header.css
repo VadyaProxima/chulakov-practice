@@ -5,110 +5,162 @@ header {
 	/* background-color: #e8abab; */
 	z-index: 2;
 }
-.header_nav {
+.header {
 	max-width: 1380px;
 	margin: auto;
-	
 }
+
+@media (max-width: 1400px) {
+	.header {
+		max-width: 1024px;
+		margin: auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.header {
+		max-width: 975px;
+		margin: auto;
+	}
+}
+
+@media (max-width: 992px) {
+	.header {
+		max-width: 740px;
+		margin: auto;
+	}
+}
+@media (max-width: 768px) {
+	.header {
+		max-width: 550px;
+		margin: auto;
+	}
+}
+@media (max-width: 576px) {
+	.header {
+		max-width: 370px;
+		margin: auto;
+	}
+}
+@media (max-width: 375px) {
+	.header {
+		max-width: 315px;
+		margin: auto;
+	}
+}
+
 ul {
 	margin-block-start: 0px;
 	margin-block-end: 0px;
 }
-.header_list {
+.header__list {
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
 	align-items: center;
 	padding: 21px 0px;
-}
-.header_geo {
-	display: flex;
-	align-items: center;
-	margin: 0;
+
+	.header__logo {
+		width: clamp(3rem, 2.286rem + 3.57vw, 5.5rem);
+	}
+
+	.header__geo {
+		display: flex;
+		align-items: center;
+		margin: 0;
+
+		.header__city {
+			font-family: var(--font-tele2);
+			color: var(--white-color);
+			font-weight: var(--p-font-weight);
+			font-size: var(--p-font-size);
+			cursor: pointer;
+		}
+	}
 }
 
-.header_city {
-	font-family: var(--font-tele2);
-	color: var(--white-color);
-	font-weight: var(--p-font-weight);
-	font-size: var(--p-font-size);
-	cursor: pointer;
-}
-.dialog1{
+.dialog__1 {
 	margin-top: clamp(3.125rem, 4.989rem + 2.68vw, 5rem);
-	width:297px;
+	width: 297px;
 	margin-right: 90px;
 	background-color: var(--white-color);
 	border-radius: 4px;
 	padding: 16px;
-	
+
+	.confirm__title {
+		font-family: var(--font-tele2);
+		font-size: 18px;
+		color: var(--grey-color);
+		margin: 16px 0px;
+	}
+	.confirm__btn {
+		color: var(--grey-color);
+		padding: 9px 19px;
+		background-color: var(--white-color);
+		border-radius: 12313px;
+		border: none;
+		margin-right: 10px;
+		cursor: pointer;
+
+		.confirm__btn:hover {
+			border: 1px black solid;
+		}
+	}
 }
-.confirm-title{
-	font-family: var(--font-tele2);
-	font-size: 18px;
-	color: var(--grey-color);
-	margin: 16px 0px;
-	
-}
-.confirm_btn{
- color: var(--grey-color);
- padding: 9px 19px;
- background-color: var(--white-color);
- border-radius: 12313px;
- border:none;
- margin-right: 10px;
- cursor: pointer;
-}
-.confirm_btn:hover{
-	border: 1px black solid;
-}
+
 dialog[open] {
-    animation: fadeIn 0.5s;
+	animation: fadeIn 0.5s;
 }
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 dialog:-internal-dialog-in-top-layer::backdrop {
-    position: fixed;
-    inset: 0px;
-    background: rgba(0, 0, 0, 0.76);
+	position: fixed;
+	inset: 0px;
+	background: rgba(0, 0, 0, 0.76);
 }
-.dialog2{
+
+.dialog__2 {
 	height: 100vw;
 	width: 100vw;
 	margin-top: clamp(3.125rem, 4.989rem + 2.68vw, 5rem);
 	border: none;
-	background-color:rgba(31, 34, 41, 1);
+	background-color: rgba(31, 34, 41, 1);
 
-}
-.city-list{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, 1fr);
-	grid-column-gap: 60px;
-	grid-row-gap: 24px;
-	width: 600px;
-	align-items: flex-start;
-	padding: 0;
-}
-.city_btn{
-	border: none;
-	background-color: rgba(250, 235, 215, 0);
-	text-align: left;
-	font-family: var(--font-tele2);
-	font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
-	width: auto;
-	height: auto;
-	white-space: nowrap;
-	cursor: pointer;
-}
-.modal-content2{
-	margin-left: 144px;
-}
-.title_city{
-	font-size: (2.125rem, 1.804rem + 1.61vw, 3.25rem);
-	font-family: var(--font-tele2);
+	.title__city {
+		font-size: (2.125rem, 1.804rem + 1.61vw, 3.25rem);
+		font-family: var(--font-tele2);
+	}
+	.modal__content__2 {
+		margin-left: 144px;
+	}
 
+	.city__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 60px;
+		grid-row-gap: 24px;
+		width: 600px;
+		align-items: flex-start;
+		padding: 0;
+
+		.city__btn {
+			border: none;
+			background-color: rgba(250, 235, 215, 0);
+			text-align: left;
+			font-family: var(--font-tele2);
+			font-size: clamp(1.125rem, 1.089rem + 0.18vw, 1.25rem);
+			width: auto;
+			height: auto;
+			white-space: nowrap;
+			cursor: pointer;
+		}
+	}
 }
