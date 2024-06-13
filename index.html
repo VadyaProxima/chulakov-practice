@@ -25,7 +25,10 @@
           <p class="largebutton__text">Принять участие</p>
         </button>
       </article>
-      <img class="benefit__boss" src="/assets/Boss1 2.svg" alt="Boss1">
+      <div class="center">
+        <img class="benefit__boss" src="/assets/Boss1 2.svg" alt="Boss1">
+      </div>
+      
     </section>
     <section class="entertainment">
       <h2 class="sub__title">Один терабайт — много любимых развлечений</h2>
@@ -55,26 +58,25 @@
     <section class="steps">
       <article class="steps__block1">
         <h2 class="sub__title">Несколько шагов <span class="sub__title--highlight">и 1 ТБ — ваш</span></h2>
-        <div class="prikol1">
-          <form class="coolinput" id="phoneForm">
-            <label for="input" class="text">Номер телефона</label>
-            <input type="tel" data-tel-input placeholder="" name="input" class="input" required>
-          </form>
+
+        <form class="coolinput" id="phoneForm">
+          <label for="input" class="text">Номер телефона</label>
+          <input type="tel" data-tel-input placeholder="" name="input" class="input" required>
+        </form>
 
 
-          <fieldset class="checkbox-container">
-            <input type="checkbox" id="squareCheckbox" data-tel-input class="square-checkbox">
-            <span class="custom-checkbox"></span>
-            <p class="checkbox_text">Даю согласие на обработку персональных данных. <a href="">Условия соглашения.</a>
-            </p>
-          </fieldset>
+        <fieldset class="checkbox-container">
+          <input type="checkbox" id="squareCheckbox" class="square-checkbox">
+          <p class="checkbox_text">Даю согласие на обработку персональных данных. <a href="#">Условия соглашения.</a>
+          </p>
+        </fieldset>
 
-          <p class="checked_text"></p>
+        <p class="checked_text"></p>
 
-          <div>
-            <button class="button"><span class="button_text">Выслать промокод</span></button>
-          </div>
+        <div class="center">
+          <button class="button"><span class="button_text">Выслать промокод</span></button>
         </div>
+
       </article>
       <ul class="steps__groups">
         <li>
@@ -98,22 +100,7 @@
             <figcaption class="step__text">Используйте свой подарочный ТБ от Tele2 в течение всего года</figcaption>
           </figure>
         </li>
-        <div class="prikol">
-          <form class="coolinput" id="phoneForm">
-            <label for="input" class="text">Номер телефона</label>
-            <input type="tel" data-tel-input placeholder="" name="input" class="input" required>
-          </form>
-          <fieldset class="checkbox-container">
-            <input type="checkbox" id="squareCheckbox" data-tel-input class="square-checkbox">
-            <span class="custom-checkbox"></span>
-            <p class="checkbox_text">Даю согласие на обработку персональных данных. <a href="">Условия соглашения.</a>
-            </p>
-          </fieldset>
-          <p class="checked_text"></p>
-          <div>
-            <button class="button"><span class="button_text">Выслать промокод</span></button>
-          </div>
-        </div>
+
       </ul>
     </section>
     <section class='invite'>
@@ -125,7 +112,10 @@
           <button class="button"><span class="button_text">Оформить тариф</span></button>
         </div>
       </article>
-      <img class="phone" class="img" src="/assets/phone.svg" alt="bigPhone">
+      <div class="center">
+        <img class="phone" class="img" src="/assets/phone.svg" alt="bigPhone">
+      </div>
+
     </section>
   </main>
   {{> footer}}

@@ -1,9 +1,0 @@
-@mixin p {
-	color: $white-color;
-	font-size: 40px;
-	font-family: $font-stolzl;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 55px;
-	letter-spacing: 1px;
-}
