@@ -158,7 +158,7 @@ h2 {
 	width: fit-content;
 }
 
-.coolinput input[type='text'].input {
+.coolinput input[type='tel'].input {
 	padding: 10px 0px 5px 0px;
 	font-size: 16px;
 	border: none;
@@ -168,7 +168,7 @@ h2 {
 	margin-bottom: 24px;
 }
 
-.coolinput input[type='text'].input:focus {
+.coolinput input[type='tel'].input:focus {
 	outline: none;
 }
 .checkbox-container {
@@ -233,6 +233,8 @@ h2 {
 .checked_text {
 	margin: 0;
 	margin-left: 12px;
+	font-size: 13px;
+	
 }
 
 .checked__container {

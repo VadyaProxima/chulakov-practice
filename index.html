@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tele2</title>
   <script type="module" src="/main.js"></script>
+  <script type="module" src="/phoneinput.js"></script>
 </head>
 
 <body>
@@ -55,23 +56,24 @@
       <article class="steps__block1">
         <h2 class="sub__title">Несколько шагов <span class="sub__title--highlight">и 1 ТБ — ваш</span></h2>
         <div class="prikol1">
-          <label class="coolinput">
+          <form class="coolinput" id="phoneForm">
             <label for="input" class="text">Номер телефона</label>
-            <input type="text" placeholder="" name="input" class="input">
-          </label>
+            <input type="tel" data-tel-input placeholder="" name="input" class="input" required>
+          </form>
+
+
           <fieldset class="checkbox-container">
-            <input type="checkbox" id="squareCheckbox" class="square-checkbox">
-            <span class="custom-checkbox square"></span>
-            <p class="checkbox_text">Даю согласие на обработку персональных данных. <a href="">Условия
-                соглашения.</a></p>
+            <input type="checkbox" id="squareCheckbox" data-tel-input class="square-checkbox">
+            <span class="custom-checkbox"></span>
+            <p class="checkbox_text">Даю согласие на обработку персональных данных. <a href="">Условия соглашения.</a>
+            </p>
           </fieldset>
+
+          <p class="checked_text"></p>
+
           <div>
             <button class="button"><span class="button_text">Выслать промокод</span></button>
           </div>
-          <label class="checked__container">
-            <img src="/assets/checked.svg" alt="">
-            <p class="checked_text">Промокод выслан на ваш номер</p>
-          </label>
         </div>
       </article>
       <ul class="steps__groups">
@@ -97,23 +99,20 @@
           </figure>
         </li>
         <div class="prikol">
-          <label class="coolinput">
+          <form class="coolinput" id="phoneForm">
             <label for="input" class="text">Номер телефона</label>
-            <input type="text" placeholder="" name="input" class="input">
-          </label>
+            <input type="tel" data-tel-input placeholder="" name="input" class="input" required>
+          </form>
           <fieldset class="checkbox-container">
-            <input type="checkbox" id="squareCheckbox" class="square-checkbox">
-            <span class="custom-checkbox square"></span>
-            <p class="checkbox_text">Даю согласие на обработку персональных данных. <a href="">Условия
-                соглашения.</a></p>
+            <input type="checkbox" id="squareCheckbox" data-tel-input class="square-checkbox">
+            <span class="custom-checkbox"></span>
+            <p class="checkbox_text">Даю согласие на обработку персональных данных. <a href="">Условия соглашения.</a>
+            </p>
           </fieldset>
-          <div class="center">
+          <p class="checked_text"></p>
+          <div>
             <button class="button"><span class="button_text">Выслать промокод</span></button>
           </div>
-          <label class="checked__container">
-            <img src="/assets/checked.svg" alt="">
-            <p class="checked_text">Промокод выслан на ваш номер</p>
-          </label>
         </div>
       </ul>
     </section>
