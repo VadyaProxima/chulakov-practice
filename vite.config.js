@@ -2,10 +2,11 @@ import browserslist from 'browserslist';
 import { browserslistToTargets } from 'lightningcss';
 import path from 'path';
 import handlebars from 'vite-plugin-handlebars';
+import { defineConfig } from 'vite';
 
 const targets = browserslistToTargets(browserslist('>=0.25%'));
 
-export default {
+export default defineConfig ({
   css: {
     transformer: 'lightningcss',
     lightningcss: {
@@ -23,10 +24,9 @@ export default {
         title: 'Hello, world!',
       },
     }),
-    // Удалено: дублирование lightningcss
   ],
   build: {
-    target: targets,
+    target: 'esnext',
     cssMinify: 'lightningcss'
   },
-};
+});
